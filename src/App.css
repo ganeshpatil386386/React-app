@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: fantasy;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgba(61, 225, 129, 1.0);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgba(66, 171, 27, 1.0), rgba(55, 205, 199, 1.0));
+  color: purple;
+  margin-top: 10%;
+  margin-left: 10%;
+  max-width: 250px;
+  height: 350px;
+  animation: mymove 5s infinite;
+  border-radius: 10px 70px 20px 70px;
+ box-shadow: 10px 10px 5px lightblue;
+  
+}
+h1{
+  text-shadow: 3px 3px #635b56;
+  
+}
+h2{
+  text-align: center;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  margin-top: 3%;
+
+}
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgba(66, 171, 27, 1.0), rgba(55, 205, 199, 1.0));
+  color: purple;
+  margin-top: 10%;
+  margin-left: 20%;
+  max-width: 250px;
+  height: 350px;
+  animation: mymove 5s infinite;
+  border-radius: 10px 70px 20px 70px;
+ box-shadow: 10px 10px 5px lightblue;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes mymove {
+  0%   {border-radius: 5rem; top: 0px; background: red; width: 100px; }
+  100% {top: 200px; background: yellow; width: 300px;}
 }
